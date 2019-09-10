@@ -1,0 +1,14 @@
+#include <iostream>
+using std::cout;
+using std::cin;
+using std::endl;
+/* среднее арифметическое двух чисел */
+int main () {
+double a, b;
+cout << "First number: ";
+cin >> a;
+cout << "Second number: ";
+cout << "Average: " << ( (a+b) / 2.0 ) <<
+endl;
+return 0;
+}
