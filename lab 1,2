@@ -1,0 +1,15 @@
+#include <iostream>
+#include <iomanip>
+int main ()
+{
+std::cout << "Enter Diametr: ";
+double d;
+std::cin >> d;
+double pi = 3.14;
+double s = pi*d;
+std::cout <<
+std::setiosflags (std::ios::fixed)
+<< std::setprecision (2) << " " <<
+s;
+return 0;
+}
