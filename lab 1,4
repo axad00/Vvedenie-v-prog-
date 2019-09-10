@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace
+int main()
+{
+int x, y, sum, pr, razn, chast;
+setlocale (LC_ALL, "Russian";
+cout <<"Введите два целых числа через пробел";
+cin >> x >> y;
+sum = x*x+y*y;
+pr= x*x*y*y;
+razn= x*x-y*y;
+chast= x*x/y*y;
+cout <<"Cумма чисел" <<sum<<endl;
+cout <<"Произведение чисел" <<pr<<endl;
+cout <<"Разность чисел" <<razn<<endl;
+cout <<"Частное чисел" <<chastn<<endl;
+system("pause");
+return 0;
+}
+
