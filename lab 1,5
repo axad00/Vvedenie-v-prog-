@@ -1,0 +1,13 @@
+#include <iostream>
+#include <cmath>
+using namespace;
+int main;
+{
+double val1 = 0;
+double val2 = 0;
+cin >> val1 >> val2;
+cout << "Сумма = " <<abs (val1) +abs (val2) << "\n";
+cout << "Разность = " << abs (val1) -abs (val2) << "\n;
+cout <<"Произведение = " <<abs (val1) *abs (val2) <<
+"\n";
+cout << "Частное = " << abs (val1)/abs (val2)<<"\n";
