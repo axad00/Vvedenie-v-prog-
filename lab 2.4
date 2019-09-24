@@ -1,25 +1,20 @@
 #include <iostream>
-#include <cstdlib>
+#include <math.h>
 using namespace std;
-
-int main() {
-	int x1,y1,x2,y2,dl,sh,S,P;
-	cout <<"Vvedite pervie koordinati" << endl;
-	cin >> x1;
-	cin >> y1;
-	cout << "Vvedite vtorie koordinati" << endl;
-	cin >> x2;
-	cin >> y2;
-
-
-	if (x1 > x2) dl = x1 - x2;
-	else dl = x2 - x1;
-	if (y1 > y2) sh = y1 - y2;
-	else sh = y2 - y1;
-
-	S = sh * dl;
-	P = (sh + dl) * 2;
-	cout << "Ploshad ="<< S << endl << "Perimetr="<< P;
-   
-        return 0;
+int main()
+{
+    int x1, x2, y1, y2, height, length, perimeter, square;
+    cin >> x1 >> y1>>x2>>y2;
+    
+    heigth = y1 - y2;
+    lenght = x1 - x2;
+    heigth = abs(heigth);
+    length = abs(length);
+    
+    perimeter = 2 * length + 2*heigth;
+    square = heigth * length;
+    
+    cout<<"area: "<<square << " perimeter: "<<perimeter;
+    
+    return 0;
 }
