@@ -1,0 +1,25 @@
+#include<cstdlib>
+#include<iostream>
+using namespace std;
+
+int main() {
+	int A, B, C, RBC, RAC, proiz;
+	cout << "Vvedite A ";
+	cin >> A;
+	cout << "Vvedite B ";
+	cin >> B;
+	cout << "Vvedite C ";
+	cin >> C;
+
+	if ((C > A) && (C < B)) {
+		if (A > C) RAC = A - C;
+		else RAC = C - A;
+		if (B > C) RBC = B - C;
+		else RBC = C - B;
+		proiz = RAC * RBC;
+		cout << "Proizvedenie otrezkov= " << proiz;
+	}
+	else cout << "ERROR";
+
+	return 0;
+} 
