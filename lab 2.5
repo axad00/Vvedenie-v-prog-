@@ -1,0 +1,50 @@
+#include <iostream>
+#include <cstdlib>
+using namespace std;
+
+int main() {
+	float x1, y1, x2, y2, x3, y3, a1, a2, a3, P, S, Pr, p, a, b;
+	cout << "Vvedite pervie koordinati" << endl;
+	cin >> x1 >> y1;
+	cout << "Vvedite vtorie koordinati" << endl;
+	cin >> x2 >> y2;
+	cout << "Vvedite tretie koordinati" << endl;
+	cin >> x3 >> y3;
+
+	//Вкладывает отрезок от x1 do x2 v a;
+	if (x1 > x2) a = x1 - x2;
+	else a = x2 - x1;
+	//Вкладывает отрезок от x2 do x3 v x2;
+	if (x2 > x3) x2 = x2 - x3;
+	else x2 = x3 - x2;
+	//Вкладывает отрезок от x3 do x1 v x3;
+	if (x3 > x1) x3 = x3 - x1;
+	else x3 = x1 - x3;
+
+	//Вкладывает отрезок от y1 do y2 v b;
+	if (y1 > y2) b = y1 - y2;
+	else b = y2 - y1;
+	//Вкладывает отрезок от y2 do y3 v b;
+	if (y2 > y3) y2 = y2 - y3;
+	else y2 = y3 - y2;
+	//Вкладывает отрезок от y3 do y1 v b;
+	if (y3 > y1) y3 = y3 - y1;
+	else y3 = y1 - y3;
+
+	a1 = sqrt((a * a) + (b * b));
+	a2 = sqrt((x2 * x2) + (y2 * y2));
+	a3 = sqrt((x3 * x3) + (y3 * y3));	
+
+
+
+	P = a1 + a2 + a3;
+	//Pr - Промежуточная переменнная для функции sqrt в формуле Герона
+	p = P / 2;
+	Pr = (p * (p - a1) * (p - a2) * (p - a3));
+	S = sqrt(Pr);
+	 
+	cout << "Ploshad treugolnika= " << S << endl;
+	cout << "Perimetr treugolnika= " << P << endl;
+
+	return 0;
+}
